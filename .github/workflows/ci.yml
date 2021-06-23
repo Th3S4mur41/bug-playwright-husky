@@ -16,3 +16,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: npm ci --no-optional --no-audit --prefer-offline --progress=false
+        env: 
+          HUSKY: 0
